@@ -1,1 +1,88 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="David Dauda Jonathan's cybersecurity portfolio">
+<title>David Dauda Jonathan | Cybersecurity</title>
+<style>
+:root{color-scheme:dark;--bg:#0a0f0c;--panel:#131c16;--green:#7df5a6;--cyan:#70e8e9;--muted:#afbeb3}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:#edf5ef;font:16px/1.7 Arial,sans-serif}
+header{position:sticky;top:0;background:#101712;border-bottom:1px solid #2b3b30;padding:15px 5%;display:flex;justify-content:space-between;align-items:center;gap:15px}
+.logo{font-family:monospace;color:var(--green);font-weight:bold}
+nav{display:flex;gap:14px;flex-wrap:wrap}
+a{color:var(--green)}
+nav a{text-decoration:none;color:#edf5ef;font-size:14px}
+main{max-width:1000px;margin:auto;padding:25px}
+.hero{padding:55px 0}
+.tag{font:13px monospace;color:var(--green)}
+h1{font-size:clamp(38px,8vw,66px);line-height:1.1;margin:15px 0}
+h1 span,h2 span{color:var(--green)}
+.intro{font-size:19px;color:var(--muted);max-width:650px}
+.button{display:inline-block;padding:10px 15px;margin:8px 8px 8px 0;border:1px solid var(--green);border-radius:7px;text-decoration:none}
+.primary{background:var(--green);color:#07120b;font-weight:bold}
+section{padding:28px 0;scroll-margin-top:80px}
+h2{font-family:monospace}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+.card{background:var(--panel);border:1px solid #2b3b30;border-radius:10px;padding:18px}
+.card p,.muted{color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{border:1px solid #2b3b30;border-radius:6px;padding:6px 9px;font:13px monospace}
+footer{border-top:1px solid #2b3b30;padding:22px;text-align:center;color:var(--muted)}
+@media(max-width:550px){header{align-items:flex-start;flex-direction:column}nav{gap:12px}main{padding:20px}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">DDJ://SECURITY</div>
+<nav aria-label="Main navigation">
+<a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+</nav>
+</header>
+<main>
+<div class="hero">
+<div class="tag">CYBERSECURITY · ETHICAL LEARNING · DEFENSE</div>
+<h1>David Dauda<br><span>Jonathan.</span></h1>
+<p class="intro">Cybersecurity student focused on ethical hacking and defense. Building practical skills in networking, security fundamentals, and defensive techniques.</p>
+<a class="button primary" href="#projects">View Projects ↓</a>
+<a class="button" href="#contact">Contact Me ↗</a>
+</div>
+<section id="about">
+<h2><span>01.</span> About</h2>
+<p class="muted">I’m a cybersecurity student building hands-on experience through labs and personal projects. My goal is to help people and organizations improve security through responsible, ethical practice.</p>
+</section>
+<section id="skills">
+<h2><span>02.</span> Skills & Tools</h2>
+<div class="chips"><span>Linux / Kali Linux</span><span>Wireshark</span><span>Nmap</span><span>Python basics</span><span>TCP/IP</span><span>DNS / HTTP(S)</span><span>Security fundamentals</span><span>Threat modeling</span></div>
+</section>
+<section id="projects">
+<h2><span>03.</span> Projects & Labs</h2>
+<div class="grid">
+<article class="card"><h3>Network Reconnaissance Lab</h3><p>Planned lab to practise host discovery and port scanning in an authorized environment.</p><p><b>Tools:</b> Nmap, Linux</p><span class="tag">WRITE-UP COMING SOON</span></article>
+<article class="card"><h3>CTF Learning Notes</h3><p>Documenting security challenges, methods, lessons, and defensive takeaways.</p><span class="tag">IN PROGRESS</span></article>
+<article class="card"><h3>Python Security Utility</h3><p>Planned beginner project for a small defensive task using Python.</p><span class="tag">PLANNED</span></article>
+</div>
+<p class="muted">Project cards are placeholders until completed work is added.</p>
+</section>
+<section id="learning">
+<h2><span>04.</span> Learning</h2>
+<div class="grid">
+<article class="card"><h3>Security+ study</h3><p>Reviewing foundational cybersecurity topics.</p></article>
+<article class="card"><h3>TryHackMe</h3><p>Beginner labs and practical exercises.</p></article>
+<article class="card"><h3>Hack The Box</h3><p>Future authorized security challenge practice.</p></article>
+</div>
+<p class="muted">Only claim certifications you have actually earned.</p>
+</section>
+<section id="contact">
+<h2><span>05.</span> Contact</h2>
+<div class="card"><p>For internships, entry-level opportunities, or collaboration:</p><p><b>Email:</b> <a href="mailto:jonathandaviddauda@gmail.com">jonathandaviddauda@gmail.com</a></p><p class="muted">GitHub and LinkedIn links can be added later.</p></div>
+</section>
+</main>
+<footer>© <span id="year"></span> David Dauda Jonathan · Responsible security practice.</footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
+
